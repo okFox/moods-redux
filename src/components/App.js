@@ -8,6 +8,12 @@ import Moods from '../containers/Moods';
 
 
 export default function App() {
-  return <Moods />;
+  return (
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Moods} />
+      </Switch>
+    </Router>
+  );
 }
 
