@@ -4,7 +4,6 @@ export const getEmoji = (state) => {
   const isEducated = state => state.studies > 2;
   const isHungry = state => state.snacks < 1;
 
-
   if(isTired(state) && isHungry(state)) return '🤬';
   if(isHyper(state) && isHungry(state)) return '🤮';
   if(isTired(state)) return '😴';
